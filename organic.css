@@ -1,0 +1,634 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.navbar-nav .nav-link {
+    color: black !important;
+    transition: all .5s ease;
+    font-size: 18px;
+    font-size: larger;
+
+
+}
+
+.logo-img {
+    width: 170px;
+}
+
+.nav-link:hover {
+    color: #64922b !important;
+
+    border: 1.5px solid gold;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 5px rgba(0, 0, 0, 0.151);
+
+}
+
+.nav-item {
+    display: flex;
+
+
+}
+
+.icon {
+    display: flex;
+    /* justify-content:space-between; */
+    font-size: large;
+    color: #87c13f;
+
+}
+
+.icon .nav-link {
+    padding: 10px;
+}
+
+@media (max-width:992px) {
+    .icon {
+        position: absolute;
+        top: 30px;
+        right: 70px;
+    }
+
+}
+
+@media (max-width:580px) {
+    .logo-img {
+        width: 120px;
+
+    }
+
+    .icon {
+        top: 15px;
+        font-size: 15px;
+    }
+}
+
+/* ********  */
+
+.product-head .container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.product-hero {
+    /* border: 2px solid red; */
+    width: 500px;
+}
+
+.product-hero img {
+    width: 100%
+}
+
+.content {
+    /* border: 2px solid green; */
+    width: 550px;
+    line-height: 25px;
+    padding: 30px;
+
+}
+
+.product-head {
+    background-image: url(image/bg-leaves-free-img.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 28% auto;
+    margin-bottom: 50px;
+
+}
+
+.content h1 {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'PT Serif', serif;
+}
+
+.shop-btn {
+    border: none;
+    background-color: #64922b;
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px 12px 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.shop-btn:hover {
+    background-color: #92be5c;
+    border: 1px solid green;
+}
+
+
+@media (max-width:1100px) {
+    .content h1 {
+        font-size: 40px;
+
+    }
+
+    .shop-btn {
+        padding: 10px 25px 10px 25px;
+    }
+
+}
+
+@media (max-width:1077px) and (min-width:768px) {
+    .content h1 {
+        font-size: 30px;
+
+    }
+
+    .shop-btn {
+        padding: 8px 20px 8px 20px;
+    }
+
+    .product-hero {
+        width: 50%;
+    }
+
+    .content {
+        width: 50%;
+    }
+
+}
+
+@media (max-width:768px) {
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.free-shipping {
+    background-color: #111111;
+    padding: 35px 0 30px;
+    margin-bottom: 100px;
+}
+
+.container .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.c {
+    background-color: #303030;
+    color: white;
+    border-radius: 5px;
+    padding: 25px 35px;
+    margin: 10px;
+}
+
+.c i {
+    color: #8BC34A;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.c p,
+.c h4 {
+    text-align: center;
+
+
+}
+
+@media (max-width:1024px) {
+    .c {
+        width: 47%;
+    }
+
+}
+
+@media (max-width:768px) {
+    .c {
+        width: 100%;
+        height: 110px;
+
+    }
+
+    .c h4 {
+        text-align: left;
+    }
+
+    .c p {
+        text-align: left;
+    }
+
+}
+
+.selling-product .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.selling-product h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+.selling-product .leaf-img {
+
+    margin-bottom: 60px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+
+
+}
+
+.product {
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+    width: 270px;
+}
+
+.product img {
+    width: 100%;
+}
+
+.card-text {
+    text-align: center;
+
+}
+
+.card-text .star {
+    word-spacing: -5px;
+    font-size: 13px;
+
+}
+
+.card-text .product-type {
+    color: #858282;
+    font-weight: 200;
+}
+
+.product-name {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+
+/* ********** */
+.leaf {
+    background-color: #F8F6F3;
+    padding-bottom: 80px;
+
+}
+
+.leaf-img {
+
+    display: flex;
+    justify-content: center;
+}
+
+.leaf-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.c1 {
+    background-image: url(image/product11-free-img.jpg);
+    /* border: 1px solid red; */
+    background-color: white;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    height: 360px;
+    width: 350px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 23px -9px #00000078;
+}
+
+.leaf-product .title {
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+}
+
+.shopnow-btn {
+    border: none;
+    background-color: #64922b;
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px 12px 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.c2 {
+    background-image: url(https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product13-free-img.jpg);
+    /* border: 1px solid red; */
+    background-color: white;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    height: 360px;
+    width: 350px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 23px -9px #00000078;
+
+}
+
+.c3 {
+    background-image: url(https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product17-free-img.jpg);
+    /* border: 1px solid red; */
+    background-color: white;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    height: 360px;
+    width: 350px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 23px -9px #00000078;
+
+}
+
+.discount {
+    background-color: #111111;
+    padding: 55px 0 55px;
+
+}
+
+.discount .main2 {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.shopnow-btn-2 {
+    border: none;
+    background-color: #64922b;
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px 12px 30px;
+    border-radius: 5px;
+
+}
+
+
+@media (max-width:768px) {
+    .discount .main2 h2 {
+        font-size: 22px;
+
+    }
+
+    .shopnow-btn-2 {
+        font-weight: 600;
+        font-size: 12px;
+        padding: 8px 18px 8px 18px;
+    }
+}
+
+@media (max-width:501px) {
+    .discount .main2 h2 {
+        font-size: 14px;
+
+    }
+
+    .shopnow-btn-2 {
+        font-weight: 600;
+        font-size: 10px;
+        padding: 6px 8px 6px 8px;
+    }
+}
+
+
+.triangle {
+    display: flex;
+    justify-content: center;
+
+}
+
+.title-reg {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: whitesmoke;
+
+}
+
+.customers-reviews .title {
+    text-align: center;
+}
+
+/* ************** */
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: end;
+}
+
+.first {
+
+    width: 350px;
+    text-align: center;
+    padding: 45px 40px;
+    border-radius: 7px;
+    height: 300px;
+    box-shadow: 0px 2px 23px -9px #00000078;
+
+}
+
+.second {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/sydney-rae-668606-unsplash.jpg);
+    background-size: cover;
+    width: 350px;
+    height: 380px;
+    padding: 50px 40px;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.second .title {
+    font-family: 'Merriweather', serif;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.second:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.621), rgba(0, 0, 0, 0.621)), url(https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/sydney-rae-668606-unsplash.jpg);
+}
+
+.second .shopnow-btn:hover {
+    background-color: #a3c17e;
+    border: 2px solid;
+
+}
+
+@media (max-width:768px) {
+    .first {
+        width: 100%;
+    }
+
+    .second {
+        width: 100%;
+    }
+
+    .leaf-product .c1,
+    .c2,
+    .c3 {
+        width: 100%;
+        background-position: bottom right;
+        background-size: 35% auto;
+        height: fit-content;
+    }
+
+    .shopnow-btn {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+
+}
+
+@media (max-width:425px) {
+    .shopnow-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+
+}
+
+/* ***********/
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.logo-title  {
+    display: flex;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    font-weight: bolder;
+    text-align: center;
+   
+}
+
+.logo-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+@media (max-width:768px) {
+    .logo-type .logos {
+        width: 50%;
+        text-align: center;
+    }
+    .logo-title h4{
+        text-align: center;
+    }
+
+}
+@media (max-width:425px) {
+    .logo-type .logos{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* ************** */
+.footer{
+    background-color: #001524;
+    color:#A8AFB4;
+   
+}
+.f-menu h4{
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 70px;
+    /* border: 1px solid red; */
+}
+.footer-logo{
+    /* border: 1px solid green; */
+    width: 400px;
+   
+}
+.footer-logo p{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 50px;
+}   
+.footer-menu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    /* border: 1px solid gold;    */
+    margin: 5px;  
+    
+}
+.f-menu{
+    /* border: 1px solid green; */
+    margin: 5px;
+    width: 330px;
+    font-weight: 400;
+    font-size: 18px;
+   line-height: 25px;
+}
+.footer-menu ul{
+    list-style: none;
+    padding: 0;
+}
+.playstore-btn img {
+    width: 90px;
+    margin-right: 20px; 
+}
+@media (max-width:1134px) {
+    .footer-logo{
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+@media (max-width:713px) {
+   
+    .f-menu{
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+}
